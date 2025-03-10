@@ -1,5 +1,146 @@
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Serif', sans-serif;
+    color: #29180f;
+    line-height: 1.6;
+    background-color: #f9f5f2;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Top bar */
+.top-bar {
+    background-color: #f0dacd;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-bar .container {
+    padding: 8px 67px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-left, .top-bar-center, .top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-center {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.top-bar-right span {
+    margin-left: 16px;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo-img {
+    height: 57px;
+    width: 48px;
+    margin-right: 5px;
+}
+
+.logo-teddy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: bold;
+    color: #29180f;
+    margin-left: -15px;
+    line-height: 0.8;
+}
+
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: #29180f;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header-actions a {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.contact-btn {
+    background-color: #89d3d1;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #f0dacd;
 }
