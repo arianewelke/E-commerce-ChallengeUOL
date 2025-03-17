@@ -740,3 +740,74 @@ h1 {
     font-size: 14px;
     color: rgba(41, 24, 15, 1);
 }
+
+/* Newsletter */
+.newsletter {
+    padding: 50px 50px;
+    background-color: rgba(240, 218, 205, 1);
+}
+
+.container-newsletter {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.newsletter-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: rgba(41, 24, 15, 1);
+}
+
+.newsletter-text h2 {
+    color:#29180f;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.newsletter-text p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: 1px solid rgba(41, 24, 15, 1);
+    font-size: 14px;
+    flex: 1;
+}
+
+.newsletter-form button {
+    padding: 10px 15px;
+    background-color: #b3826f;
+    color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid rgba(41, 24, 15, 1);
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #a06d5d;
+}
+
+.small {
+    text-align: right;
+    margin-right: 100px;
+    margin-top: -10px;
+}
+
+.small p {
+    text-decoration: underline;
+    font-size: 10px;
+    color: rgba(41, 24, 15, 1);
+}
+
