@@ -440,8 +440,14 @@ h1 {
 
 /* Services Section */
 .services-section {
-    padding: 30px 30px 30px 30px;
+    padding: 50px 50px ;
     background: rgba(225, 237, 233, 1);
+}
+
+.services-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .container-service h2 {
@@ -450,7 +456,7 @@ h1 {
     font-size: 48px;
     line-height: 120%;
     text-align: center;
-    margin-top: 20px;
+    margin: 50px 20px;
 }
 
 .container-service img {
@@ -459,25 +465,21 @@ h1 {
    margin-bottom: -15px;
 }
 
-
 .services-grid {
     display: flex;
-    justify-content: center;
-    gap: 58px;
-    margin-top: 50px;
+    transition: transform 0.5s ease-in-out; 
 }
 
+
 .service-card {
-    display: flex;
-    flex-direction: column;
+    min-width: calc(90% / 3);
+    padding: 20px;
     background-color: white;
     text-align: center;
-    align-items: center;
-    height: 198px;
-    width: 378px;
     border-radius: 31px;
     border: 3px solid rgba(201, 176, 121, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 calc(5% / 3) 0 calc(5% / 3);
 }
 
 .service-card h3 {
@@ -489,6 +491,7 @@ h1 {
 }
 
 .service-card .icon-wrapper {
+    margin-left: 40%;
     width: 53px;
     height: 53px;
     display: flex;
@@ -638,7 +641,6 @@ h1 {
     font-size: 15px;
 }
 
-
 .link {
     color: rgba(41, 24, 15, 1);
     font-weight: 500;
@@ -659,12 +661,18 @@ h1 {
 
 /* Testimonials */
 .testimonials {
-    padding: 50px;
+    padding: 50px 20px;
     background: rgba(225, 237, 233, 1);
 }
 
 .section-title img {
     height: 40px;
+}
+
+.testimonials-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .container-testimonials h2 {
@@ -685,19 +693,20 @@ h1 {
 }
 
 .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    padding-top: 30px;
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
 }
 
 .testimonial-card {
-    display: flex;
-    flex-direction: column;
+    min-width: calc(90% / 3);
+    padding: 20px;
     background-color: white;
-    padding: 25px;
+    text-align: center;
     border-radius: 31px;
     border: 3px solid rgba(201, 176, 121, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0 calc(5% / 3) 0 calc(5% / 3);
 }
 
 .quote {
@@ -737,8 +746,34 @@ h1 {
 }
 
 .author-info p {
-    font-size: 14px;
     color: rgba(41, 24, 15, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #29180f;
 }
 
 /* Newsletter */
@@ -860,6 +895,7 @@ footer {
     margin-top: 50px;
     width: 100%;
 }
+
 
 .footer-bottom {
     display: flex;
