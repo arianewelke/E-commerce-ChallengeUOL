@@ -520,6 +520,7 @@ h1 {
 .services-grid {
     display: flex;
     transition: transform 0.5s ease-in-out; 
+    
 }
 
 
@@ -724,9 +725,9 @@ h1 {
 }
 
 .testimonials-slider {
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
-    position: relative;
+   box-sizing: border-box;
 }
 
 .container-testimonials h2 {
@@ -1286,7 +1287,7 @@ footer {
         font-size: 10px; 
     }
 
-    .categories, .products-grid, .services-grid, .testimonials-grid {
+    .categories, .products-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1319,17 +1320,6 @@ footer {
     }
 
     .service-card {
-        flex: 1 1 100%; 
-        background-color: white;
-        text-align: center;
-        border-radius: 31px;
-        border: 3px solid rgba(201, 176, 121, 1);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        flex-shrink: 0; 
-    }
-
-    .testimonial-card {
-        flex: 1 1 90%; 
         padding: 10px;
         margin: 15px;
         background-color: white;
@@ -1340,8 +1330,18 @@ footer {
         flex-shrink: 0; 
     }
 
-    .special-grid {
-        grid-template-columns: 2fr;
+    .testimonial-card {
+        background-color: white;
+        text-align: center;
+        border-radius: 31px;
+        border: 3px solid rgba(201, 176, 121, 1);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        flex-shrink: 0; 
+    }
+
+    .special-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+        max-width: 90%;
     }
     
     .special-card.large {
@@ -1373,6 +1373,10 @@ footer {
     font-size: 30px;
    }
 
+   .special-card.large {
+    border-radius: 30px;
+   }
+
     .container-testimonials h2 {
         font-size: 25px;
         padding: 10px;
@@ -1385,22 +1389,42 @@ footer {
     }
     
     .newsletter-form input {
-        border-radius: 20px;
         margin-bottom: 10px;
     }
     
     .newsletter-form button {
-        border-radius: 20px;
         padding: 12px;
+    }
+
+    .newsletter-text h2 {
+        font-size: 20px;
+    
+    }
+
+    .newsletter-form form {
+        width: 150px;
+
+    }
+
+    .small {
+        margin-top: -20px;
+        margin-left: 80px;
+        padding-left: 10px ;
+
     }
 
     .footer-bottom .logo {
         margin: -30px;
+        height: 20px;
     }
 
-    .footer-bottom p {
-        padding-right: -60px;
-        font-size: 10px;
-        word-break: break-all;
-    }
+  .logo-text span {
+    font-size: 15px ;
+  }
+
+  .footer-bottom p {
+    text-align:right;
+    padding-right: -50px;
+    font-size: 8px;
+  }
 }
