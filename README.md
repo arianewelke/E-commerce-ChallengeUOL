@@ -1,5 +1,7 @@
 ![Tela do Projeto](assets/tela.png "Tela do Projeto")
 
+Projeto disponível: https://arianewelke.github.io/E-commerce-ChallengeUOL/
+
 # Projeto E-commerce - Desafio 3 Compass UOL
 
 Este projeto foi desenvolvido como parte de um desafio da Compass UOL, com o objetivo de avaliar a resolução de problemas, a utilização de ferramentas necessárias e a assertividade frente às demandas solicitadas. O projeto consiste em um site e-commerce desenvolvido utilizando apenas HTML, CSS e JavaScript, seguindo um layout fornecido no Figma.
