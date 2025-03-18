@@ -59,4 +59,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-   
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    mobileMenu.addEventListener('click', function() {
+        mobileNav.classList.toggle('active');
+    });
+});
